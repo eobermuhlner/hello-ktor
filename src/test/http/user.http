@@ -1,0 +1,26 @@
+GET http://localhost:8080/users
+Accept: application/json
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+Authorization: Basic admin admin
+
+{
+  "user": {
+    "name": "eric",
+    "password": "123"
+  }
+}
+###
+POST http://localhost:8080/snippets
+Content-Type: application/json
+Authorization: Basic unknown wrong
+
+{
+  "user": {
+    "name": "evil user",
+    "password": "evil password"
+  }
+}
+###
