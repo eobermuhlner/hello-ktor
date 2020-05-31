@@ -1,3 +1,18 @@
-# Project exclude paths
-/.gradle/
-/build/
+# gradle stuff
+
+.gradle
+build
+gradle.properties
+out
+
+# Eclipse IDE stuff
+
+.project
+.classpath
+bin
+.settings
+
+# IntelliJ IDEA stuff
+
+*.iml
+.idea
